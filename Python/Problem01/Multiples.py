@@ -4,11 +4,14 @@
 #
 #  Find the sum of all the multiples of 3 or 5 below 1000.
 
-number = 1000
-sum = 0
+def multiples(number):
+    sum = 0
 
-for i in range(0, number):
-    if i%3 == 0 or i%5 == 0:
-        sum += i
+    for i in range(0, number):
+        if i%3 == 0 or i%5 == 0:
+            sum += i
 
-print(sum)
+    print(sum)
+
+multiples(10)
+multiples(1000)
